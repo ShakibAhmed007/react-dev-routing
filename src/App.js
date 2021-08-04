@@ -21,7 +21,7 @@ export default function App() {
       <Route path="/user">
         <User />
       </Route>
-      <Route path="/product-details/:productId">
+      <Route path="/product/:productId">
         <ProductDetails />
       </Route>
     </div>
