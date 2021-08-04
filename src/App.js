@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Welcome from './Components/Welcome';
 import Product from './Components/Product';
 import User from './Components/User';
@@ -12,18 +12,20 @@ export default function App() {
     <div>
       <h1>Router</h1>
       <MainHeader />
-      <Route path="/welcome">
-        <Welcome />
-      </Route>
-      <Route path="/product">
-        <Product />
-      </Route>
-      <Route path="/user">
-        <User />
-      </Route>
-      <Route path="/product/:productId">
-        <ProductDetails />
-      </Route>
+      <Switch>
+        <Route path="/welcome">
+          <Welcome />
+        </Route>
+        <Route path="/product">
+          <Product />
+        </Route>
+        <Route path="/user">
+          <User />
+        </Route>
+        <Route path="/product/:productId">
+          <ProductDetails />
+        </Route>
+      </Switch>
     </div>
   );
 }
