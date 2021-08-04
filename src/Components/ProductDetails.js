@@ -6,3 +6,5 @@ const ProductDetails = () => {
     </section>
   );
 };
+
+export default ProductDetails;
