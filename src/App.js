@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Welcome from './Components/Welcome';
 import Product from './Components/Product';
 import User from './Components/User';
@@ -13,6 +13,9 @@ export default function App() {
       <h1>Router</h1>
       <MainHeader />
       <Switch>
+        <Route path="/" exact>
+          <Redirect to="/welcome" />
+        </Route>
         <Route path="/welcome">
           <Welcome />
         </Route>
