@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import Welcome from './Components/Welcome';
 import Product from './Components/Product';
 import User from './Components/User';
+import ProductDetails from './Components/ProductDetails';
 import MainHeader from './UI/MainHeader';
 
 export default function App() {
@@ -19,6 +20,9 @@ export default function App() {
       </Route>
       <Route path="/user">
         <User />
+      </Route>
+      <Route path="/product-details/:productId">
+        <ProductDetails />
       </Route>
     </div>
   );
