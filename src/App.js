@@ -3,6 +3,7 @@ import './style.css';
 import { Route } from 'react-router-dom';
 import Welcome from './Components/Welcome';
 import Product from './Components/Product';
+import User from './Components/User';
 import MainHeader from './UI/MainHeader';
 
 export default function App() {
@@ -15,6 +16,9 @@ export default function App() {
       </Route>
       <Route path="/product">
         <Product />
+      </Route>
+      <Route path="/user">
+        <User />
       </Route>
     </div>
   );
