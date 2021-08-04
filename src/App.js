@@ -13,7 +13,7 @@ export default function App() {
       <h1>Router</h1>
       <MainHeader />
       <Switch>
-        <Route path="/welcome" exact>
+        <Route path="/welcome">
           <Welcome />
         </Route>
         <Route path="/product" exact>
